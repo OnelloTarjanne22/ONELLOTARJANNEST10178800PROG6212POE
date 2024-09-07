@@ -5,12 +5,12 @@
         <input type="email" class="input" placeholder="Email" required>
         <input type="password" class="input" placeholder="Password" required>
         <p class="page-link">
-            <span class="page-link-label">Forgot Password?</span>
+                <a class="page-link-label" asp-controller="Home" asp-action="Index">Forgot Password?</a>
         </p>
         <button class="form-btn">Log in</button>
     </form>
     <p class="sign-up-label">
-            Don't have an account?<a class="sign-up-link" asp-area="" asp-controller="Home" asp-action="Privacy">Sign up</a>
+            Don't have an account?<a class="sign-up-link" asp-area="" asp-controller="Home" asp-action="Index">Sign up</a>
     </p>  
     </div>
 </center>
