@@ -16,13 +16,32 @@ html {
   position: relative;
   min-height: 100%;
 }
+h1 { color:aliceblue
+}
+h2{
+    color:black;
+}
+.cardo {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px; 
+    line-height: 1.6; 
+    color: #333; 
+    font-family: Arial, sans-serif; 
+}
+
+
+
 
 header {
     background-color: #343a40;
 }
 body {
     margin-bottom: 60px;
-    background-color: #ced4da;
+    background-image: url('../images/wojciech-paczes-0wnwss_ake8-unsplash.jpg');
 }
 footer{
     background-color:#343a40;
@@ -385,7 +404,6 @@ button:hover .arrow:before {
 
 
 
-/* From Uiverse.io by lukepadiachy */ 
 .my-loader {
   width: 200px;
   height: 200px;
@@ -442,5 +460,21 @@ button:hover .arrow:before {
   100% {
     transform: rotateX(360deg) rotateY(360deg);
   }
+}
+
+.bgblue {
+    background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
+    padding: 1px;
+    border-radius: 1.2rem;
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+    max-width: 300px;
+}
+
+.cardhom {
+    font-size: 1rem;
+    color: #bec4cf;
+    background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
 }
 
