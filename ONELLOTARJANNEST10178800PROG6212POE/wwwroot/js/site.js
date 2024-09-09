@@ -1,4 +1,9 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿document.getElementById('claimForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('Claim submitted successfully!');
+});
 
-// Write your JavaScript code.
+document.getElementById('trackingForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('Tracking request sent!');
+});

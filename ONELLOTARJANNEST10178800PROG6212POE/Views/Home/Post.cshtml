@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Post Claims";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="cardi">
+    <div class="card-header">
+        <h2> Claim Form</h2>
+    </div>
+    <div class="card-body">
+        <form id="claimForm">
+            <div class="form-group">
+                <label for="lecturerName">Lecturer Name:</label>
+                <input type="text" id="lecturerName" name="lecturerName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="contractId">Contract ID:</label>
+                <input type="text" id="contractId" name="contractId" placeholder="Enter contract ID" required>
+            </div>
+            <div class="form-group">
+                <label for="claimAmount">Claim Amount:</label>
+                <input type="number" id="claimAmount" name="claimAmount" placeholder="Enter claim amount" required>
+            </div>
+            <div class="form-group">
+                <label for="claimDate">Date of Claim:</label>
+                <input type="date" id="claimDate" name="claimDate" required>
+            </div>
+            <div class="form-group">
+            <label for="file">Choose file:</label>
+            <input type="file" id="file" name="file" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Claim Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe the claim" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Claim</button>
+            </div>
+        </form>
+    </div>
+</div>
+<form asp-area="" asp-controller="Home" asp-action="Track" method="post">
+    <button class="button" type="submit">
+    Track Claims
+</button>
+</form>
